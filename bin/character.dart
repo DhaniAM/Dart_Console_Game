@@ -1,4 +1,4 @@
-class Character {
+abstract class Character {
   int health = 1, attack = 0, armor = 0, x = 0, y = 0;
   Character(
     this.health, this.attack, this.armor, this.x, this.y
