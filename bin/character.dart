@@ -29,13 +29,27 @@ class Character {
   }
   set armor(ar) {
     health = ar;
-  }
+  } 
 
   // Move Command
-  void moveUp() => _x++;
-  void moveDown() => _x--;
-  void moveRight() => _y++;
-  void moveLeft() => _y--;
+  void moveUp() => {
+    if(_x != 100) {
+      _x++;
+  }};
+
+  void moveDown() =>  {
+    if(_x != 0) {
+      _x--;
+  }};
+  void moveRight() => {
+    if(_y != 100) {
+      _y++;
+  }};
+
+  void moveLeft() => {
+    if(_y != 0) {
+      _y--;
+  }};
   
   void checkStatus() {
     print('Position: ($_x.$_y), Health: $_health, Attack: $_attack, Armor: $_armor');
