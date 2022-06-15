@@ -28,3 +28,15 @@ class Character {
     print('Position: ($x.$y), Health: $health, Attack: $attack, Armor: $armor');
   }
 }
+
+class Player extends Character {
+  Player(super.health, super.armor, super.attack, super.x, super.y);
+}
+
+class Enemy extends Character {
+  Enemy(super.health, super.attack, super.armor, super.x, super.y);
+}
+
+class Npc extends Character{
+  Npc(super.health, super.attack, super.armor, super.x, super.y);
+}
